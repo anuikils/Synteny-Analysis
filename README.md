@@ -123,6 +123,6 @@ export PATH=/path/to/ntsynt-viz/github/ntSynt-viz/bin:$PATH
    - `multispecies.conf`: *A. fulica* vs. *D. laeve* vs. *A. vulgaris*  
 3. Run visualizations:  
    ```bash
-   NGenomeSyn -c dlaeve_avulgaris.conf -o pairwise_results
+   NGenomeSyn -c dlaeve_dlasit.conf -o pairwise_results
    NGenomeSyn -c multispecies.conf -o multispecies_results
    ```
