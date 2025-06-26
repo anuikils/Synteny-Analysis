@@ -117,12 +117,28 @@ export PATH=/path/to/ntsynt-viz/github/ntSynt-viz/bin:$PATH
 ---
 
 ### **Final Visualization with NGenomeSyn**  
-1. Install [NGenomeSyn](https://github.com/hewm2008/NGenomeSyn)  
-2. Use provided configuration files:  
-   - `dlaeve_dlasit.conf`: *D. laeve* vs. *D. lasit*  
-   - `multispecies.conf`: *A. fulica* vs. *D. laeve* vs. *A. vulgaris*  
-3. Run visualizations:  
+At this stage, all necessary input files for NGenomeSyn visualizations have been generated. The final steps are:
+
+1. **Install NGenomeSyn** following the [official documentation](https://github.com/hewm2008/NGenomeSyn)  
    ```bash
-   NGenomeSyn -c dlaeve_dlasit.conf -o pairwise_results
-   NGenomeSyn -c multispecies.conf -o multispecies_results
+   # Example installation commands
+   git clone https://github.com/hewm2008/NGenomeSyn.git
+   cd NGenomeSyn
+   make
    ```
+
+2. **Run visualizations** using our pre-configured files:  
+   ```bash
+   # For D. laeve vs D. lasithionense
+   ./NGenomeSyn -c Final_Dlaeve_Dlasit_NGenomeSyn_figure/config.conf -o Dlaeve_Dlasit_results
+   
+   # For multi-species comparison (A. fulica, D. laeve, A. vulgaris)
+   ./NGenomeSyn -c Final_Afulica_Dlaeve_Avulgaris_NGenomeSyn_figure/config.conf -o Multispecies_results
+   ```
+
+3. **Access results**:  
+  
+   - Configuration files used for our final figures are available in their respective folders:  
+     - `Final_Dlaeve_Dlasit_NGenomeSyn_figure/`  
+     - `Final_Afulica_Dlaeve_Avulgaris_NGenomeSyn_figure/`
+
