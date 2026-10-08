@@ -1,6 +1,6 @@
 ### Synteny Analysis  
 
-We employ an annotation-free strategy for synteny block identification and visualization. This approach is particularly useful for closely related species. For more divergent comparisons (e.g., gastropods vs. arthropods), alternative methods may be preferable.  
+We employ an annotation-free strategy for synteny block identification and visualization. This approach is particularly useful for closely related species. For more divergent comparisons, alternative methods may be preferable.  
 
 ---
 
